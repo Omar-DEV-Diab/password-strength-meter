@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070CFB7C27119F5100DAF34F /* stenghtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070CFB7B27119F5100DAF34F /* stenghtView.swift */; };
 		07CB1BA326F4C66D0022BA6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CB1BA226F4C66D0022BA6B /* AppDelegate.swift */; };
 		07CB1BA526F4C66D0022BA6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CB1BA426F4C66D0022BA6B /* SceneDelegate.swift */; };
 		07CB1BA726F4C66D0022BA6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CB1BA626F4C66D0022BA6B /* ViewController.swift */; };
 		07CB1BAA26F4C66D0022BA6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CB1BA826F4C66D0022BA6B /* Main.storyboard */; };
 		07CB1BAC26F4C6700022BA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07CB1BAB26F4C6700022BA6B /* Assets.xcassets */; };
 		07CB1BAF26F4C6700022BA6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CB1BAD26F4C6700022BA6B /* LaunchScreen.storyboard */; };
+		07E3FD8926F4D61F00027568 /* passwordStrengthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3FD8626F4D61F00027568 /* passwordStrengthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		070CFB7B27119F5100DAF34F /* stenghtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stenghtView.swift; sourceTree = "<group>"; };
 		07CB1B9F26F4C66D0022BA6B /* password strength meter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "password strength meter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CB1BA226F4C66D0022BA6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07CB1BA426F4C66D0022BA6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		07CB1BAB26F4C6700022BA6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07CB1BAE26F4C6700022BA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07CB1BB026F4C6700022BA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E3FD8626F4D61F00027568 /* passwordStrengthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = passwordStrengthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		07CB1BA126F4C66D0022BA6B /* password strength meter */ = {
 			isa = PBXGroup;
 			children = (
+				07E3FD8626F4D61F00027568 /* passwordStrengthService.swift */,
 				07CB1BA226F4C66D0022BA6B /* AppDelegate.swift */,
 				07CB1BA426F4C66D0022BA6B /* SceneDelegate.swift */,
+				070CFB7B27119F5100DAF34F /* stenghtView.swift */,
 				07CB1BA626F4C66D0022BA6B /* ViewController.swift */,
 				07CB1BA826F4C66D0022BA6B /* Main.storyboard */,
 				07CB1BAB26F4C6700022BA6B /* Assets.xcassets */,
@@ -98,6 +104,7 @@
 				TargetAttributes = {
 					07CB1B9E26F4C66D0022BA6B = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -138,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				07CB1BA726F4C66D0022BA6B /* ViewController.swift in Sources */,
+				070CFB7C27119F5100DAF34F /* stenghtView.swift in Sources */,
 				07CB1BA326F4C66D0022BA6B /* AppDelegate.swift in Sources */,
 				07CB1BA526F4C66D0022BA6B /* SceneDelegate.swift in Sources */,
+				07E3FD8926F4D61F00027568 /* passwordStrengthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7YXF235PW8;
 				INFOPLIST_FILE = "password strength meter/Info.plist";
@@ -295,6 +305,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.omar.password-strength-meter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7YXF235PW8;
 				INFOPLIST_FILE = "password strength meter/Info.plist";

@@ -7,13 +7,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
 
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var strenghtnesContainer: StrengthMeterView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        passwordField.isSecureTextEntry = true
+        passwordField.returnKeyType = .done
     }
-
-
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        strenghtnesContainer.checkPasswordStrength(textField.text)
+    }
 }
 
